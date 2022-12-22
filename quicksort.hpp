@@ -3,7 +3,7 @@
 
 #include "libs.hpp"
 
-vector<int> quickSort(vector<int>& );
+void quicksort(vector<int>& );
 
 
 #endif
