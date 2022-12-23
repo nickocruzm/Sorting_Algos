@@ -1,11 +1,10 @@
 #include "libs.hpp"
-
-void quicksort(vector<int>& );
+#include "quicksort.hpp"
 
 int main(){
-    vector<int> vec = {3,2,1};
+    vector<int> vec = {23,31,33,21,8,78,54,98,23,89,81,47,37};
 
-    cout<< vec.size();
+    cout<<"size: "<< vec.size()<<endl;
     quicksort(vec);
     
 
@@ -14,16 +13,4 @@ int main(){
     }
 
 
-}
-
-
-void quicksort(vector<int>& vec){
-
-    for(int i = 0; i < vec.size(); i++){
-        for(int j = i+1; j < vec.size(); j++){
-            if(vec[j] < vec[i]){
-                swap(vec[i],vec[j]);
-            }
-        }
-    }
 }
